@@ -1,0 +1,3 @@
+//botao curtida
+
+document.addEventListener
