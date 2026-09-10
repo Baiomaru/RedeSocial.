@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Post Social Media</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,7 +16,7 @@
             <!-- Cabeçalho do Post -->
             <div class="post-header">
                 <div class="user-info">
-                    <img class="avatar-small" src="niko.jpg" ; alt="Avatar">
+                    <img class="avatar-small" src="niko.jpg" alt="Avatar">
                     <span class="username">Baiomaru</span>
                 </div>
                 <div class="more-options">
@@ -31,11 +30,11 @@
 
             <!-- Mídia Principal -->
             <div class="post-media">
-                <img class="main-img" src="oneshot.jpeg" ; alt="photo">
+                <img class="main-img" src="oneshot.jpeg" alt="photo">
 
                 <!-- Sticker/Badge sobreposto na foto -->
                 <div class="user-badge">
-                    <img src="darius.jpg" ; alt="">
+                    <img src="darius.jpg" alt="">
                     <div class="plus-icon">+</div>
                 </div>
             </div>
@@ -43,13 +42,14 @@
             <!-- Barra de Interações -->
             <div class="post-actions">
                 <div class="left-actions">
-                    <button class="action-btn">
+                    <!-- BOTÃO DE CORAÇÃO (Adicionadas as classes like-btn e likes-count) -->
+                    <button class="action-btn like-btn">
                         <svg viewBox="0 0 24 24">
                             <path
                                 d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                             </path>
                         </svg>
-                        3.2k
+                        <span class="likes-count">3.2k</span>
                     </button>
 
                     <button class="action-btn">
@@ -80,7 +80,8 @@
                     </button>
                 </div>
 
-                <button class="action-btn">
+                <!-- BOTÃO DE SALVAR (Adicionada a classe bookmark-btn) -->
+                <button class="action-btn bookmark-btn">
                     <svg viewBox="0 0 24 24">
                         <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
                     </svg>
@@ -89,7 +90,7 @@
 
             <!-- Detalhes / Curtidas -->
             <div class="post-details">
-                <p class="likes">Liked by <strong>sahasrara</strong> and <strong>357 others</strong></p>
+                <p class="likes">Liked by <strong>sahasrara</strong> and <strong class="others-count">357 others</strong></p>
             </div>
 
             <!-- Navegação Inferior -->
@@ -129,6 +130,8 @@
         </div>
     </div>
 
+    <!-- Script JS importado no final -->
+    <script src="script.js"></script>
 </body>
 
 </html>
